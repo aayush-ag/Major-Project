@@ -5,9 +5,9 @@ Improved BLE Scanner
 Scans for BLE devices and shows extended information:
 - Device name (fallback)
 - RSSI
-- Manufacturer data
+- Manufacturer context
 - Service UUIDs
-- Service data
+- Service context
 
 Compatible with Windows/Linux/macOS (w/ bleak)
 

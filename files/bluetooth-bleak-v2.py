@@ -19,8 +19,8 @@ async def continuous_scan():
     while True:
         data = await scan_ble_devices()
         print("Scanned BLE Data:", data)
-        # Send this data to your database (see Step 3)
-        # For example: await db_client.insert_ble_data(data)
+        # Send this context to your database (see Step 3)
+        # For example: await db_client.insert_ble_data(context)
         await asyncio.sleep(10)  # adjust the sleep time to 10-15 seconds
 
 if __name__ == "__main__":

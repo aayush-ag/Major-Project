@@ -1,0 +1,7 @@
+bleak
+chromadb
+llama-index-vector-stores-chroma
+ollama
+llama-index-llms-ollama
+
+pip install langchain chromadb sentence-transformers langchainhub

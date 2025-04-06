@@ -1,0 +1,24 @@
+[
+  {
+    "id": "monday_cs_2pm",
+    "day": "Monday",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "location": "Lab A",
+    "subject": "Computer Science",
+    "syllabus_url": "https://example.com/syllabus-cs",
+    "notes_url": "https://drive.google.com/folderview?id=CS_NOTES",
+    "description": "Focus on Python loops and recursion."
+  },
+  {
+    "id": "tuesday_math_10am",
+    "day": "Tuesday",
+    "start_time": "10:00",
+    "end_time": "11:00",
+    "location": "Room 201",
+    "subject": "Mathematics",
+    "syllabus_url": "https://example.com/syllabus-math",
+    "notes_url": "https://drive.google.com/folderview?id=MATH_NOTES",
+    "description": "Linear algebra basics — vectors and matrices."
+  }
+]
