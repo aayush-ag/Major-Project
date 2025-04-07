@@ -31,7 +31,7 @@ def insert_or_update(data: NodesPayload):
     now = time.time()
     c.execute("""
         INSERT INTO devices (id, location, last_seen)
-        VALUES (?, ?)
+        VALUES (?, ?, ?)
         ON CONFLICT(id) DO UPDATE SET
             last_seen=excluded.last_seen,
             location=excluded.location

@@ -29,7 +29,7 @@ async def update_known_addresses():
     try:
         async with httpx.AsyncClient() as client:
             headers = {"Authorization": f"Bearer {TOKEN}"}
-            response = await client.get(f"{SERVER_URL}/nodes", headers=headers)
+            response = await client.get(f"{SERVER_URL}/nodes/", headers=headers)
             response.raise_for_status()
             data = response.json()
             # Assume you get a list of nodes with "address" field
