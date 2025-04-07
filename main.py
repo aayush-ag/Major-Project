@@ -2,8 +2,7 @@
 
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-
-from models import create_tables
+from database import create_tables
 from routes import nodes, neighbours, chat
 from health import start_health_check
 

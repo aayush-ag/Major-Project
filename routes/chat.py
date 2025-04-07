@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models import ChatRequest
+from classes.chat import ChatRequest
 from ollama_infer import ask_model
 
 router = APIRouter(prefix="/chat", tags=["chat"])

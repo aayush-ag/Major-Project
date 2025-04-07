@@ -1,7 +1,22 @@
 import sqlite3
 import time
+from classes.neighbours import NeighboursPayload
+from classes.nodes import NodesPayload
 
 DB_NAME = "devices.db"
+
+def create_tables():
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS devices (
+            id TEXT PRIMARY KEY,
+            rssi INTEGER,
+            last_seen TIMESTAMP
+        )
+    ''')
+    conn.commit()
+    conn.close()
 
 def init_db():
     conn = sqlite3.connect(DB_NAME)
@@ -23,7 +38,7 @@ def init_db():
     conn.commit()
     conn.close()
 
-def insert_or_update(uid: str, location: str):
+def insert_or_update(data: NodesPayload):
     conn = sqlite3.connect(DB_NAME)
     c = conn.cursor()
     now = time.time()
@@ -33,19 +48,19 @@ def insert_or_update(uid: str, location: str):
         ON CONFLICT(id) DO UPDATE SET
             last_seen=excluded.last_seen,
             location=excluded.location
-    """, (uid, location, now))
+    """, (data.uid, data.location, now))
     conn.commit()
     conn.close()
 
-def insert_neighbours(node_id: str, neighbours: list):
+def insert_neighbours(data: NeighboursPayload):
     conn = sqlite3.connect(DB_NAME)
     c = conn.cursor()
-    c.execute("DELETE FROM devices_neighbour WHERE node_id = ?", (node_id,))  # Clear old data
-    for neighbour in neighbours:
+    c.execute("DELETE FROM devices_neighbour WHERE node_id = ?", (data.node_id,))  # Clear old data
+    for neighbour in data.neighbours:
         c.execute("""
             INSERT INTO devices_neighbour (id, rsid, node_id)
             VALUES (?, ?, ?)
-        """, (neighbour['id'], neighbour['rssi'], node_id))
+        """, (neighbour['id'], neighbour['rssi'], data.node_id))
     conn.commit()
     conn.close()
 

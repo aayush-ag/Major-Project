@@ -1,14 +1,13 @@
-from fastapi import APIRouter
-from pydantic import BaseModel
-from db import insert_or_update
+from fastapi import APIRouter, HTTPException
+from classes.nodes import NodesPayload
+from database import insert_or_update
 
 router = APIRouter(prefix="/nodes", tags=["nodes"])
 
-class NodesPayload(BaseModel):
-    uid: str
-    location: str
-
 @router.post("/")
 async def ingest_device(data: NodesPayload):
-    insert_or_update(data.uid, data.location)
-    return {"status": "received"}
+    try:
+        insert_or_update(data)
+        return {"status": "received"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Database insert failed: {str(e)}")

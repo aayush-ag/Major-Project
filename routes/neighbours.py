@@ -1,18 +1,13 @@
-from fastapi import APIRouter
-from pydantic import BaseModel
-from db import insert_neighbours
+from fastapi import APIRouter, HTTPException
+from classes.neighbours import NeighboursPayload
+from database import insert_neighbours
 
 router = APIRouter(prefix="/neighbours", tags=["nodes"])
 
-class Neighbour(BaseModel):
-    id: str
-    rsid: int
-
-class NeighboursPayload(BaseModel):
-    node_id: str
-    neighbours: list[Neighbour]
-
 @router.post("/")
 async def neighbours_device(data: NeighboursPayload):
-    insert_neighbours(data.node_id, data.neighbours)
-    return {"status": "received"}
+    try:
+        insert_neighbours(data)
+        return {"status": "received"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Database insert failed: {str(e)}")
