@@ -5,6 +5,6 @@ class BLEDevice(BaseModel):
     rssi: int
 
 class ChatRequest(BaseModel):
-    nearest: BLEDevice
+    nearest: str
     neighbour: list[BLEDevice]
     prompt: str

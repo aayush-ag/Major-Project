@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from database import create_tables
+from database import init_db
 from routes import nodes, neighbours, chat
 from health import start_health_check
 
@@ -10,7 +10,7 @@ from health import start_health_check
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup logic
-    create_tables()
+    init_db()
     start_health_check()
     yield
     # Optional: shutdown logic

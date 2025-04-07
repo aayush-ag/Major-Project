@@ -1,9 +1,6 @@
 from pydantic import BaseModel
-
-class Neighbour(BaseModel):
-    id: str
-    rsid: int
+from chat import BLEDevice
 
 class NeighboursPayload(BaseModel):
     node_id: str
-    neighbours: list[Neighbour]
+    neighbours: list[BLEDevice]

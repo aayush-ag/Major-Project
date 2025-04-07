@@ -1,8 +1,6 @@
 import os
 import json
 import ollama
-from datetime import datetime
-import pytz
 
 CONTEXT_DIR = "context"  # Your folder with .txt, .json etc.
 
@@ -24,18 +22,8 @@ def load_context_files():
                 combined_context += json.dumps(data, indent=2)
     return combined_context
 
-def get_time_info_ist():
-    ist = pytz.timezone("Asia/Kolkata")
-    now = datetime.now(ist)
-    return {
-        "time": now.strftime("%I:%M %p"),
-        "day": now.strftime("%A"),
-        "date": now.strftime("%Y-%m-%d")
-    }
-
 def build_prompt(user_prompt: str) -> str:
     context = load_context_files()
-    time_info = get_time_info_ist()
 
     template_path = os.path.join(CONTEXT_DIR, "llm.txt")
     if os.path.exists(template_path):
@@ -43,10 +31,7 @@ def build_prompt(user_prompt: str) -> str:
             template = f.read()
         full_prompt = template.format(
             context=context,
-            user_prompt=user_prompt,
-            time=time_info["time"],
-            day=time_info["day"],
-            date=time_info["date"]
+            user_prompt=user_prompt
         )
     else:
         full_prompt = user_prompt
