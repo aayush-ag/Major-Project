@@ -1,10 +1,12 @@
 # --- main.py ---
 
-from fastapi import FastAPI
 from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
+
 from database import init_db
-from routes import nodes, neighbours, chat
 from health import start_health_check
+from routes import nodes, neighbours, chat
 
 
 @asynccontextmanager

@@ -1,11 +1,14 @@
+from datetime import datetime
+
+import pytz
 from fastapi import APIRouter
+
 from classes.chat import ChatRequest
 from database import get_active_devices_with_info, get_neighbour_count_all_nodes
 from ollama_infer import ask_model
-from datetime import datetime
-import pytz
 
 router = APIRouter(prefix="/chat", tags=["chat"])
+
 
 def get_time_info_ist():
     ist = pytz.timezone("Asia/Kolkata")
@@ -15,6 +18,8 @@ def get_time_info_ist():
         "day": now.strftime("%A"),
         "date": now.strftime("%Y-%m-%d")
     }
+
+
 @router.post("/")
 async def chat_with_context(data: ChatRequest):
     # Core context parts

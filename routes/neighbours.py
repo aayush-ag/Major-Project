@@ -1,8 +1,10 @@
 from fastapi import APIRouter, HTTPException
+
 from classes.neighbours import NeighboursPayload
 from database import insert_neighbours
 
 router = APIRouter(prefix="/neighbours", tags=["nodes"])
+
 
 @router.post("/insert")
 async def neighbours_device(data: NeighboursPayload):

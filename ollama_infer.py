@@ -1,8 +1,10 @@
-import os
 import json
+import os
+
 import ollama
 
 CONTEXT_DIR = "context"  # Your folder with .txt, .json etc.
+
 
 def load_context_files():
     combined_context = ""

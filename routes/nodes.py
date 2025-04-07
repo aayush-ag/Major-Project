@@ -1,8 +1,10 @@
 from fastapi import APIRouter, HTTPException
+
 from classes.nodes import NodesPayload
 from database import insert_or_update, get_active_devices
 
 router = APIRouter(prefix="/nodes", tags=["nodes"])
+
 
 @router.post("/insert")
 async def insert_node(data: NodesPayload):
@@ -11,6 +13,7 @@ async def insert_node(data: NodesPayload):
         return {"status": "received"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database insert failed: {str(e)}")
+
 
 @router.get("/")
 async def get_active_nodes():

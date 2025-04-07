@@ -1,9 +1,11 @@
 import sqlite3
 import time
+
 from classes.neighbours import NeighboursPayload
 from classes.nodes import NodesPayload
 
 DB_NAME = "devices.db"
+
 
 def init_db():
     conn = sqlite3.connect(DB_NAME)
@@ -25,6 +27,7 @@ def init_db():
     conn.commit()
     conn.close()
 
+
 def insert_or_update(data: NodesPayload):
     conn = sqlite3.connect(DB_NAME)
     c = conn.cursor()
@@ -39,6 +42,7 @@ def insert_or_update(data: NodesPayload):
     conn.commit()
     conn.close()
 
+
 def insert_neighbours(data: NeighboursPayload):
     conn = sqlite3.connect(DB_NAME)
     c = conn.cursor()
@@ -51,6 +55,7 @@ def insert_neighbours(data: NeighboursPayload):
     conn.commit()
     conn.close()
 
+
 def get_active_devices(threshold_sec: int = 30):
     cutoff = time.time() - threshold_sec
     conn = sqlite3.connect(DB_NAME)
@@ -60,6 +65,7 @@ def get_active_devices(threshold_sec: int = 30):
     conn.close()
     return [row[0] for row in rows]
 
+
 def remove_stale_devices(threshold_sec: int = 30):
     cutoff = time.time() - threshold_sec
     conn = sqlite3.connect(DB_NAME)
@@ -67,6 +73,7 @@ def remove_stale_devices(threshold_sec: int = 30):
     c.execute("DELETE FROM devices WHERE last_seen < ?", (cutoff,))
     conn.commit()
     conn.close()
+
 
 def get_neighbour_count_all_nodes():
     conn = sqlite3.connect(DB_NAME)
@@ -79,6 +86,7 @@ def get_neighbour_count_all_nodes():
     rows = c.fetchall()
     conn.close()
     return [{"node_id": row[0], "neighbour_count": row[1]} for row in rows]
+
 
 def get_active_devices_with_info(threshold_sec: int = 30):
     cutoff = time.time() - threshold_sec

@@ -1,6 +1,8 @@
 import asyncio
 import threading
+
 from database import remove_stale_devices
+
 
 def start_health_check():
     def loop():
