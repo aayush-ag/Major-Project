@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from classes.neighbours import NeighboursPayload
-from database import insert_neighbours, get_neighbours_by_node_id
+from database import insert_neighbours
 
 router = APIRouter(prefix="/neighbours", tags=["nodes"])
 

@@ -1,5 +1,8 @@
 from pydantic import BaseModel
-from chat import BLEDevice
+
+class BLEDevice(BaseModel):
+    id: str
+    rssi: int
 
 class NeighboursPayload(BaseModel):
     node_id: str

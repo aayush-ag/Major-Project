@@ -79,3 +79,12 @@ def get_neighbour_count_all_nodes():
     rows = c.fetchall()
     conn.close()
     return [{"node_id": row[0], "neighbour_count": row[1]} for row in rows]
+
+def get_active_devices_with_info(threshold_sec: int = 30):
+    cutoff = time.time() - threshold_sec
+    conn = sqlite3.connect(DB_NAME)
+    c = conn.cursor()
+    c.execute("SELECT id, location FROM devices WHERE last_seen > ?", (cutoff,))
+    rows = c.fetchall()
+    conn.close()
+    return [{"id": row[0], "location": row[1]} for row in rows]
