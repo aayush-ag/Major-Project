@@ -9,7 +9,7 @@ DB_CONFIG = {
     "dbname": os.getenv("DB_NAME", "major"),
     "user": os.getenv("DB_USER", "root"),
     "password": os.getenv("DB_PASSWORD", "password"),
-    "host": os.getenv("DB_HOST", "localhost"),
+    "host": os.getenv("DB_HOST", "192.168.134.30"),
     "port": int(os.getenv("DB_PORT", 5432))
 }
 
@@ -30,8 +30,7 @@ def init_db():
     ''')
     c.execute('''
         CREATE TABLE IF NOT EXISTS devices_neighbour (
-            id TEXT,
-            rsid INT,
+            count INT,
             node_id TEXT
         );
     ''')
@@ -58,11 +57,10 @@ def insert_neighbours(data: NeighboursPayload):
     conn = get_conn()
     c = conn.cursor()
     c.execute("DELETE FROM devices_neighbour WHERE node_id = %s", (data.node_id,))
-    for neighbour in data.neighbours:
-        c.execute("""
-            INSERT INTO devices_neighbour (id, rsid, node_id)
-            VALUES (%s, %s, %s)
-        """, (neighbour['id'], neighbour['rssi'], data.node_id))
+    c.execute("""
+        INSERT INTO devices_neighbour (count, node_id)
+        VALUES (%s, %s)
+    """, (data.neighbours, data.node_id))
     conn.commit()
     conn.close()
 

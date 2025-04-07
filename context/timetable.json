@@ -4,7 +4,7 @@
     "day": "Monday",
     "start_time": "14:00",
     "end_time": "15:00",
-    "location": "Lab A",
+    "location": "Room 101",
     "subject": "Computer Science",
     "syllabus_url": "https://example.com/syllabus-cs",
     "notes_url": "https://drive.google.com/folderview?id=CS_NOTES",
