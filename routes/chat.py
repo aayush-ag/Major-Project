@@ -49,8 +49,5 @@ async def chat_with_context(data: ChatRequest):
     else:
         context += "No nearby devices detected."
 
-    # Final user prompt
-    full_prompt = context + f"\n\n🧑‍🎓 User Question:\n{data.prompt}"
-
-    response = ask_model(full_prompt)
+    response = ask_model(data.prompt, context)
     return {"response": response}
