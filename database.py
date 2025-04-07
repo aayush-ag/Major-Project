@@ -35,7 +35,7 @@ def insert_or_update(data: NodesPayload):
         ON CONFLICT(id) DO UPDATE SET
             last_seen=excluded.last_seen,
             location=excluded.location
-    """, (data.uid, data.location, now))
+    """, (data.id, data.location, now))
     conn.commit()
     conn.close()
 

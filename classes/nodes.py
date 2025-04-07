@@ -1,5 +1,5 @@
 from pydantic import BaseModel
 
 class NodesPayload(BaseModel):
-    uid: str
+    id: str
     location: str
