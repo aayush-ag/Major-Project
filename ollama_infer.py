@@ -20,7 +20,7 @@ def load_context_files():
     return combined_context
 
 
-def build_prompt(user_prompt: str, injected_context: str = "") -> str:
+def build_prompt(user_prompt: str, injected_context: str, name: str) -> str:
     # Load all static context files from context/
     static_context = load_context_files()
 
@@ -34,7 +34,8 @@ def build_prompt(user_prompt: str, injected_context: str = "") -> str:
             template = f.read()
         full_prompt = template.format(
             context=full_context,
-            user_prompt=user_prompt
+            user_prompt=user_prompt,
+            name=name,
         )
     else:
         full_prompt = f"{full_context}\n\n{user_prompt}"
@@ -46,8 +47,8 @@ OLLAMA_BASE = os.getenv("OLLAMA_API_BASE", "http://localhost:11434")
 # Tell the Ollama client where the API lives
 ollama.base_url = OLLAMA_BASE
 
-def ask_model(user_prompt: str, injected_context: str = "") -> str:
-    prompt = build_prompt(user_prompt, injected_context)
+def ask_model(user_prompt: str, injected_context: str = "", name: str = "") -> str:
+    prompt = build_prompt(user_prompt, injected_context, name)
     response = ollama.chat(
         model="mistral",
         messages=[{"role": "user", "content": prompt}]

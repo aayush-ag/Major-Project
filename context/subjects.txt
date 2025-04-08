@@ -1,0 +1,83 @@
+-- 4 Semester
+Subject Code: ECS-40x
+- Title: Electronic Devices and Circuits-II (EDC-II)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-40x.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-40x.pdf
+- Description: Study of semiconductor devices, analog circuit design principles, and their application in communication systems.
+---
+Subject Code: ECS-40x
+- Title: Computer Architecture (CA)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-40x.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-40x.pdf
+- Description: Introduction to structure and behavior of modern computer systems including CPU, memory, and input/output.
+---
+Subject Code: ECS-40x
+- Title: Analog Communication (AC)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-40x.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-40x.pdf
+- Description: Covers modulation techniques, noise analysis, and signal transmission fundamentals.
+---
+Subject Code: ECS-40x
+- Title: Environment Science
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-40x.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-40x.pdf
+- Description: Overview of environmental issues, sustainability practices, and ecosystem dynamics.
+---
+Subject Code: ECS-40x
+- Title: Operational Research (Open Elective-I)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-40x.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-40x.pdf
+- Description: Analytical methods to aid decision-making with linear programming, queuing theory, and optimization.
+---
+Subject Code: ECS-40x
+- Title: Economics (Open Elective-II)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-40x.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-40x.pdf
+- Description: Basics of micro and macroeconomics relevant to engineering decision making.
+---
+
+-- 6 Semester
+Subject Code: ECS-601
+- Title: Microprocessor (µP)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-601.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-601.pdf
+- Description: Focuses on architecture, programming, and interfacing of microprocessors.
+---
+Subject Code: ECS-602
+- Title: Digital Signal Processing (DSP)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-602.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-602.pdf
+- Description: Techniques for analysis and processing of digital signals using Fourier and Z-transforms.
+---
+Subject Code: ECS-603
+- Title: Antenna and Wave-Propagation (AWP)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-603.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-603.pdf
+- Description: Introduction to antenna design, radiation patterns, and electromagnetic wave behavior.
+---
+Subject Code: ECS-604
+- Title: Data Communication & Computer Networking (DCCN)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-604.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-604.pdf
+- Description: Fundamentals of network protocols, architecture, and data transmission methods.
+---
+
+-- 8 Semester
+Subject Code: ECS-801
+- Title: Microwave (µW)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-801.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-801.pdf
+- Description: Studies electromagnetic wave propagation at microwave frequencies and related components.
+---
+Subject Code: ECS-802
+- Title: Optical Fiber Communication (OFC)
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-802.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-802.pdf
+- Description: Principles of light transmission, fiber optics technology, and optical communication systems.
+---
+Subject Code: ECS-812
+- Title: Major Project
+- Notes: https://s3-ag.agcloud.in.eu.org/notes/ecs-812.pdf
+- Syllabus: https://s3-ag.agcloud.in.eu.org/syllabus/ecs-812.pdf
+- Description: Capstone engineering project involving design, development, and presentation of a working prototype.
+---

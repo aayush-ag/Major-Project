@@ -47,5 +47,5 @@ async def chat_with_context(data: ChatRequest):
     else:
         context += "No data available for people counts in rooms."
 
-    response = ask_model(data.prompt, context)
+    response = ask_model(data.prompt, context, data.name)
     return {"response": response}
