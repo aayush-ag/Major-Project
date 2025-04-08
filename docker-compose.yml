@@ -6,9 +6,9 @@ services:
     container_name: postgres
     restart: unless-stopped
     environment:
-      POSTGRES_DB: ${DB_NAME:-your_db_name}
-      POSTGRES_USER: ${DB_USER:-your_user}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-your_password}
+      POSTGRES_DB: ${DB_NAME:-major}
+      POSTGRES_USER: ${DB_USER:-root}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
     volumes:
       - /mnt/aayush/major-db:/var/lib/postgresql/data
     ports:
