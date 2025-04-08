@@ -1,0 +1,142 @@
+{
+  "subjects_by_semester": {
+    "VIII": {
+      "ECS-801": {
+        "name": "Microwave (µW)",
+        "syllabus_url": "https://example.com/syllabus-ecs-801",
+        "notes_url": "https://drive.google.com/folderview?id=ecs801_notes",
+        "description": "Microwave engineering principles and transmission lines."
+      },
+      "ECS-802": {
+        "name": "Optical Fiber Communication (OFC)",
+        "syllabus_url": "https://example.com/syllabus-ecs-802",
+        "notes_url": "https://drive.google.com/folderview?id=ecs802_notes",
+        "description": "Fundamentals of optical fibers and light propagation."
+      },
+      "ECS-811": {
+        "name": "Microwave Lab",
+        "syllabus_url": "https://example.com/syllabus-ecs-811",
+        "notes_url": "https://drive.google.com/folderview?id=ecs811_notes",
+        "description": "Lab sessions on microwave measurements and waveguides."
+      },
+      "ECS-610": {
+        "name": "Microprocessor Lab (µP Lab)",
+        "syllabus_url": "https://example.com/syllabus-ecs-610",
+        "notes_url": "https://drive.google.com/folderview?id=ecs610_notes",
+        "description": "Practical work on 8085/8086 microprocessor programming."
+      },
+      "ECS-611": {
+        "name": "DSP Lab",
+        "syllabus_url": "https://example.com/syllabus-ecs-611",
+        "notes_url": "https://drive.google.com/folderview?id=ecs611_notes",
+        "description": "Digital signal processing implementation using MATLAB/Simulink."
+      },
+      "ECS-612": {
+        "name": "Seminar",
+        "syllabus_url": "https://example.com/syllabus-ecs-612",
+        "notes_url": "https://drive.google.com/folderview?id=ecs612_notes",
+        "description": "Presentation and research discussion on emerging technologies."
+      },
+      "ECS-812": {
+        "name": "Major Project",
+        "syllabus_url": "https://example.com/syllabus-ecs-812",
+        "notes_url": "https://drive.google.com/folderview?id=ecs812_notes",
+        "description": "Capstone design project with implementation and report."
+      }
+    },
+    "VI": {
+      "ECS-601": {
+        "name": "Microprocessor (µP)",
+        "syllabus_url": "https://example.com/syllabus-ecs-601",
+        "notes_url": "https://drive.google.com/folderview?id=ecs601_notes",
+        "description": "Architecture and programming of microprocessors and microcontrollers."
+      },
+      "ECS-602": {
+        "name": "Digital Signal Processing (DSP)",
+        "syllabus_url": "https://example.com/syllabus-ecs-602",
+        "notes_url": "https://drive.google.com/folderview?id=ecs602_notes",
+        "description": "Discrete-time signals and systems, DFT, FFT, and filter design."
+      },
+      "ECS-603": {
+        "name": "Antenna and Wave Propagation (AWP)",
+        "syllabus_url": "https://example.com/syllabus-ecs-603",
+        "notes_url": "https://drive.google.com/folderview?id=ecs603_notes",
+        "description": "Antenna types, radiation, and wave propagation in space."
+      },
+      "ECS-604": {
+        "name": "Data Communication & Computer Networking (DCCN)",
+        "syllabus_url": "https://example.com/syllabus-ecs-604",
+        "notes_url": "https://drive.google.com/folderview?id=ecs604_notes",
+        "description": "OSI model, protocols, and network layer functions."
+      }
+    },
+    "IV": {
+      "ECS-40x_EDC-II": {
+        "name": "Electronic Devices and Circuits-II",
+        "syllabus_url": "https://example.com/syllabus-edc2",
+        "notes_url": "https://drive.google.com/folderview?id=edc2_notes",
+        "description": "Semiconductor devices, amplifiers, and feedback systems."
+      },
+      "ECS-40x_CA": {
+        "name": "Computer Architecture",
+        "syllabus_url": "https://example.com/syllabus-ca",
+        "notes_url": "https://drive.google.com/folderview?id=ca_notes",
+        "description": "Architecture of CPUs, pipelining, and memory systems."
+      },
+      "ECS-40x_AC": {
+        "name": "Analog Communication",
+        "syllabus_url": "https://example.com/syllabus-ac",
+        "notes_url": "https://drive.google.com/folderview?id=ac_notes",
+        "description": "Amplitude and frequency modulation, signal transmission."
+      },
+      "ECS-41x_EDC-II Lab": {
+        "name": "EDC-II Lab",
+        "syllabus_url": "https://example.com/syllabus-edc2-lab",
+        "notes_url": "https://drive.google.com/folderview?id=edc2lab_notes",
+        "description": "Practical experiments on transistors and amplifier circuits."
+      },
+      "ECS-41x_CA-Lab": {
+        "name": "Computer Architecture Lab",
+        "syllabus_url": "https://example.com/syllabus-ca-lab",
+        "notes_url": "https://drive.google.com/folderview?id=ca_lab_notes",
+        "description": "Simulation and hardware study of CPU architecture."
+      },
+      "ECS-41x_AC Lab": {
+        "name": "Analog Communication Lab",
+        "syllabus_url": "https://example.com/syllabus-ac-lab",
+        "notes_url": "https://drive.google.com/folderview?id=ac_lab_notes",
+        "description": "Modulation/demodulation and signal analysis in communication systems."
+      },
+      "ECS-41x_NSCP": {
+        "name": "NSCP (Appl.Sc)",
+        "syllabus_url": "https://example.com/syllabus-nscp",
+        "notes_url": "https://drive.google.com/folderview?id=nscp_notes",
+        "description": "Non-conventional signal coding and processing fundamentals."
+      },
+      "Env_Sc": {
+        "name": "Environmental Science",
+        "syllabus_url": "https://example.com/syllabus-envsc",
+        "notes_url": "https://drive.google.com/folderview?id=envsc_notes",
+        "description": "Environmental awareness and sustainability practices."
+      },
+      "Minor_Honors_VLSI": {
+        "name": "Minor/Honors: VLSI Technology",
+        "syllabus_url": "https://example.com/syllabus-vlsi",
+        "notes_url": "https://drive.google.com/folderview?id=vlsi_notes",
+        "description": "VLSI fabrication and CMOS technology fundamentals."
+      },
+      "Open_Elective_I": {
+        "name": "Operational Research",
+        "syllabus_url": "https://example.com/syllabus-or",
+        "notes_url": "https://drive.google.com/folderview?id=or_notes",
+        "description": "Optimization, linear programming, and decision analysis."
+      },
+      "Open_Elective_II": {
+        "name": "Economics",
+        "syllabus_url": "https://example.com/syllabus-economics",
+        "notes_url": "https://drive.google.com/folderview?id=economics_notes",
+        "description": "Basic principles of micro and macroeconomics."
+      }
+    }
+  }
+}
