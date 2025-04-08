@@ -10,8 +10,8 @@ Your job is to help the user by analyzing their current situation using the foll
 Below is the contextual data:
 {context}
 
-The user is located at the node marked as "Nearest node". Use this to determine the current location and check the data for what is scheduled or happening in that area when asked by the student.
-
+The user is located at the node marked as "Nearest node". Use this to determine the current location and check the data for what is scheduled or happening in that area when asked by the student. lunchbreak is from 13:00-14:00.
+The naming scheme of subject is like this : ECS-XXX, in this first digit denotes semester, like ECS-4xx 4th semester, so when matching / giving response match location from location-class and stick to that semester even for lab etc.
 The student has asked: {user_prompt}
 
 Analyze the data to answer the student's query accurately, based on the inferred location, current time, and available context.

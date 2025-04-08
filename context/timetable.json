@@ -1,115 +1,106 @@
 {
   "timetable": {
     "Monday": {
-      "VIII": [
-        {"time": "09:00-10:00", "subject": "ECS-802: OFC (MU)"},
-        {"time": "10:00-11:00", "subject": ""},
-        {"time": "11:00-12:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-801: µW (WA)"},
-        {"time": "02:00-03:00", "subject": "ECS-811: Microwave Lab (X-1)"},
-        {"time": "03:00-04:00", "subject": "ECS-611: DSP Lab (X-1) (AK/DNA/RS-Asif)"},
-        {"time": "04:00-05:00", "subject": "ECS-610: µP Lab (X-2) (MN/ANK/RS-Aleem)"},
-        {"time": "05:00-06:00", "subject": "ECS-612: Seminar (X-3) (SAL/MTB/DP)"}
+      "8 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-802: OFC", "teacher": "MU"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-801: µW", "teacher": "WA"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-811: Microwave Lab", "group": "X-1", "teacher": "SIA/MU"}
       ],
-      "VI": [
-        {"time": "09:00-10:00", "subject": "ECS-604: DCCN (MTB)"},
-        {"time": "10:00-11:00", "subject": "ECS-603: AWP (MA)"},
-        {"time": "11:00-12:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-601: µP (SAL)"}
+      "6 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-604: DCCN", "teacher": "MTB"},
+        {"time": "11:00-12:00 IST", "subject": "ECS-603: AWP", "teacher": "MA"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-601: µP", "teacher": "SAL"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-611: DSP Lab", "group": "X-1", "teacher": "AK/DNA/RS-Asif"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-610: µP Lab", "group": "X-2", "teacher": "MN/ANK/RS-Aleem"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-612: Seminar", "group": "X-3", "teacher": "SAL/MTB/DP"}
+
       ],
-      "IV": [
-        {"time": "09:00-10:00", "subject": "ECS-40x CA (SH)"},
-        {"time": "10:00-11:00", "subject": "Env. Sc (CVL)"},
-        {"time": "12:00-01:00", "subject": "Minor/Honors VLSI Technology (HN)"},
-        {"time": "02:00-03:00", "subject": "ECS-41x: EDC-II (X-1) (WA/HN)"},
-        {"time": "03:00-04:00", "subject": "ECS-41x: AC Lab (X-3) (IK/MA/RS-Zafar)"},
-        {"time": "04:00-05:00", "subject": "ECS-41x. CA-Lab (HN/SH) (X-1)"}
+      "4 Semester": [
+        {"time": "09:00-10:00 IST", "subject": "ECS-40x CA", "teacher": "SH"},
+        {"time": "10:00-11:00 IST", "subject": "Env. Sc", "teacher": "CVL"},
+        {"time": "12:00-13:00 IST", "subject": "Minor/Honors VLSI Technology", "teacher": "HN"},
+        {"time": "14:00-16:00 IST", "subject": "ECS-41x: EDC-II", "group": "X-1", "teacher": "WA/HN"},
+        {"time": "14:00-16:00 IST", "subject": "ECS-41x: AC Lab", "group": "X-3", "teacher": "IK/MA/RS-Zafar"},
+        {"time": "16:00-18:00 IST", "subject": "ECS-41x. CA-Lab", "group": "X-1", "teacher": "HN/SH"}
       ]
     },
     "Tuesday": {
-      "VIII": [
-        {"time": "09:00-10:00", "subject": "ECS-802: OFC (MU)"},
-        {"time": "10:00-11:00", "subject": ""},
-        {"time": "11:00-12:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-801: µW (WA)"},
-        {"time": "02:00-03:00", "subject": "ECS-811: Microwave Lab (X-3)"},
-        {"time": "03:00-04:00", "subject": "ECS-611: DSP Lab (X-3) (AK/DNA/RS-Asif)"},
-        {"time": "04:00-05:00", "subject": "ECS-610: µP Lab (X-1) (MN/ANK/RS-Aleem)"},
-        {"time": "05:00-06:00", "subject": "ECS-612: Seminar (X-2) (MU/NA/DP)"}
+      "8 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-802: OFC", "teacher": "MU"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-801: µW", "teacher": "WA"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-811: Microwave Lab", "group": "X-3", "teacher": "SIA/MU"}
       ],
-      "VI": [
-        {"time": "09:00-10:00", "subject": "ECS-604: DCCN (MTB)"},
-        {"time": "10:00-11:00", "subject": "ECS-603: AWP (MA)"},
-        {"time": "12:00-01:00", "subject": "ECS-601: µP (SAL)"}
+      "6 Semester": [
+        {"time": "09:00-10:00 IST", "subject": "ECS-604: DCCN", "teacher": "MTB"},
+        {"time": "10:00-11:00 IST", "subject": "ECS-603: AWP", "teacher": "MA"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-601: µP", "teacher": "SAL"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-611: DSP Lab", "group": "X-3", "teacher": "AK/DNA/RS-Asif"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-610: µP Lab", "group": "X-1", "teacher": "MN/ANK/RS-Aleem"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-612: Seminar", "group": "X-2", "teacher": "SAL/MTB/DP"}
       ],
-      "IV": [
-        {"time": "09:00-10:00", "subject": "ECS-40x: EDC-II (SIA)"},
-        {"time": "10:00-11:00", "subject": "ECS-40x CA (SH)"},
-        {"time": "12:00-01:00", "subject": "Minor/Honors VLSI Technology (HN)"},
-        {"time": "02:00-03:00", "subject": "ECS-41x: EDC-II Lab (X-2) (WA/HN)"},
-        {"time": "04:00-05:00", "subject": "ECS-41x. CA-Lab (HN/SH) (X-2)"}
+      "4 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-40x: EDC-II", "teacher": "SIA"},
+        {"time": "11:00-12:00 IST", "subject": "ECS-40x CA", "teacher": "SH"},
+        {"time": "12:00-13:00 IST", "subject": "Minor/Honors VLSI Technology", "teacher": "HN"},
+        {"time": "14:00-16:00 IST", "subject": "ECS-41x: EDC-II", "group": "X-2", "teacher": "WA/HN"},
+        {"time": "14:00-16:00 IST", "subject": "ECS-41x: AC Lab", "group": "X-1", "teacher": "IK/MA/RS-Zafar"},
+        {"time": "16:00-18:00 IST", "subject": "ECS-41x. CA-Lab", "group": "X-2", "teacher": "HN/SH"}
       ]
     },
     "Wednesday": {
-      "VIII": [
-        {"time": "09:00-10:00", "subject": "ECS-812: Major Project (MTB/SIA)"},
-        {"time": "10:00-11:00", "subject": ""},
-        {"time": "11:00-12:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-801: µW (WA)"},
-        {"time": "02:00-03:00", "subject": "ECS-812: Major Project (WA/IK)"}
+      "8 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-812: Major Project", "teacher": "MTB/SIA"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-801: µW", "teacher": "WA"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-812: Major Project", "teacher": "WA/IK"}
       ],
-      "VI": [
-        {"time": "09:00-10:00", "subject": "ECS-602: DSP (DP)"},
-        {"time": "10:00-11:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-601: µP (SAL)"},
-        {"time": "03:00-04:00", "subject": "ECS-611: DSP Lab (X-2) (AK/DNA/RS-Asif)"},
-        {"time": "04:00-05:00", "subject": "ECS-610: µP Lab (X-3) (ANK/SH/RS-Aleem)"},
-        {"time": "05:00-06:00", "subject": "ECS-612: Seminar (X-1) (MTB/SAL/NA)"}
+      "6 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-602: DSP", "teacher": "DP"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-601: µP", "teacher": "SAL"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-611: DSP Lab", "group": "X-2", "teacher": "AK/DNA/RS-Asif"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-610: µP Lab", "group": "X-3", "teacher": "MN/ANK/RS-Aleem"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-612: Seminar", "group": "X-1", "teacher": "SAL/MTB/DP"}
       ],
-      "IV": [
-        {"time": "09:00-10:00", "subject": "ECS-40x: AC (IK)"},
-        {"time": "10:00-11:00", "subject": "Economics (Mech)"},
-        {"time": "12:00-01:00", "subject": "Minor/Honors VLSI Technology (HN)"},
-        {"time": "02:00-03:00", "subject": "ECS-41x: NSCP (X-1-3) (Appl.Sc)"}
+      "4 Semester": [
+        {"time": "09:00-10:00 IST", "subject": "ECS-40x: AC", "teacher": "IK"},
+        {"time": "10:00-11:00 IST", "subject": "Economics", "teacher": "Mech"},
+        {"time": "12:00-13:00 IST", "subject": "Minor/Honors VLSI Technology", "teacher": "HN"},
+        {"time": "14:00-15:00 IST", "subject": "ECS-41x: NSCP", "teacher": "Appl.Sc"}
       ]
     },
     "Thursday": {
-      "VIII": [
-        {"time": "09:00-10:00", "subject": "ECS-812: Major Project (MU/AK)"},
-        {"time": "10:00-11:00", "subject": ""},
-        {"time": "11:00-12:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-801: µW (WA)"},
-        {"time": "02:00-03:00", "subject": "ECS-811: Microwave Lab (X-2) (SIA/UM)"},
-        {"time": "03:00-06:00", "subject": ""}
+      "8 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-812: Major Project", "teacher": "MU/AK"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-801: µW", "teacher": "WA"},
+        {"time": "14:00-18:00 IST", "subject": "ECS-811: Microwave Lab", "group": "X-2", "teacher": "SIA/MU"}
       ],
-      "VI": [
-        {"time": "09:00-10:00", "subject": "ECS-602: DSP (DP)"},
-        {"time": "10:00-11:00", "subject": ""},
-        {"time": "12:00-01:00", "subject": "ECS-601: µP (SAL)"}
+      "6 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-602: DSP", "teacher": "DP"},
+        {"time": "12:00-13:00 IST", "subject": "ECS-601: µP", "teacher": "SAL"}
       ],
-      "IV": [
-        {"time": "09:00-10:00", "subject": "ECS-40x: EDC-II (MU/AK)"},
-        {"time": "10:00-11:00", "subject": "Env. Sc (CVL)"},
-        {"time": "11:00-12:00", "subject": "Op-Research"},
-        {"time": "12:00-01:00", "subject": "ECS-40x: AC (IK)"},
-        {"time": "02:00-03:00", "subject": "ECS-41x: EDC-II Lab (X-3) (WA/HN)"},
-        {"time": "03:00-06:00", "subject": "ECS-41x. CA-Lab (HN/SH) (X-3)"}
+      "4 Semester": [
+        {"time": "09:00-10:00 IST", "subject": "ECS-40x: EDC-II", "teacher": "MU/AK"},
+        {"time": "10:00-11:00 IST", "subject": "Env. Sc", "teacher": "CVL"},
+        {"time": "11:00-12:00 IST", "subject": "Op-Research"},
+        {"time": "14:00-16:00 IST", "subject": "ECS-41x: EDC-II", "group": "X-3", "teacher": "WA/HN"},
+        {"time": "16:00-18:00 IST", "subject": "ECS-41x. CA-Lab", "group": "X-3", "teacher": "HN/SH"}
       ]
     },
     "Friday": {
-      "VIII": [
-        {"time": "09:00-10:00", "subject": "ECS-812: Major Project (NAJ/DP)"}
+      "8 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-812: Major Project", "teacher": "NA/DP"},
+        {"time": "11:00-13:00 IST", "subject": "ECS-812: Major Project", "teacher": "IK/SH"},
+        {"time": "14:00-16:00 IST", "subject": "ECS-812: Major Project", "teacher": "DP/MN"}
       ],
-      "VI": [
-        {"time": "09:00-10:00", "subject": "ECS-603: AWP (MA)"}
+      "6 Semester": [
+        {"time": "09:00-11:00 IST", "subject": "ECS-603: AWP", "teacher": "MA"}
       ],
-      "IV": [
-        {"time": "10:00-11:00", "subject": "Economics (Mech)"},
-        {"time": "12:00-01:00", "subject": "Op-Research (Mech)"}
+      "4 Semester": [
+        {"time": "11:00-13:00 IST", "subject": "Economics", "teacher": "Mech"},
+        {"time": "14:00-16:00 IST", "subject": "Op-Research"}
       ]
     }
   },
-  "faculty": {
+  "teacher": {
     "SAL": "Prof. Sajad Ahmad Loan",
     "MTB": "Prof. M. T. Beg",
     "MU": "Prof. Mainuddin",

@@ -46,8 +46,15 @@ def build_prompt(user_prompt: str, injected_context: str = "") -> str:
 
     return full_prompt
 
+OLLAMA_BASE = os.getenv("OLLAMA_API_BASE", "http://localhost:11434")
+
+# Tell the Ollama client where the API lives
+ollama.base_url = OLLAMA_BASE
 
 def ask_model(user_prompt: str, injected_context: str = "") -> str:
     prompt = build_prompt(user_prompt, injected_context)
-    response = ollama.chat(model="mistral", messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(
+        model="mistral",
+        messages=[{"role": "user", "content": prompt}]
+    )
     return response.get("message", {}).get("content", "No response from model.")
