@@ -34,8 +34,6 @@ services:
       - "11434:11434"
     volumes:
       - /mnt/aayush/ollama:/root/.ollama
-    networks:
-      - backend
     restart: unless-stopped
     entrypoint: ["/bin/bash", "-c", "ollama serve & sleep 5 && ollama pull mistral && tail -f /dev/null"]
 
