@@ -1,7 +1,5 @@
-import json
 import os
-
-import ollama
+from ollama import Client
 
 CONTEXT_DIR = "context"  # Your folder with .txt, .json etc.
 
@@ -44,12 +42,12 @@ def build_prompt(user_prompt: str, injected_context: str, name: str) -> str:
 
 OLLAMA_BASE = os.getenv("OLLAMA_API_BASE", "http://localhost:11434")
 
-# Tell the Ollama client where the API lives
-ollama.base_url = OLLAMA_BASE
-
 def ask_model(user_prompt: str, injected_context: str = "", name: str = "") -> str:
+    client = Client(
+        host=OLLAMA_BASE,
+    )
     prompt = build_prompt(user_prompt, injected_context, name)
-    response = ollama.chat(
+    response = client.chat(
         model="mistral",
         messages=[{"role": "user", "content": prompt}]
     )

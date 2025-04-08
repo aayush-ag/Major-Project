@@ -36,6 +36,3 @@ services:
       - /mnt/aayush/ollama:/root/.ollama
     restart: unless-stopped
     entrypoint: ["/bin/bash", "-c", "ollama serve & sleep 5 && ollama pull mistral && tail -f /dev/null"]
-
-volumes:
-  postgres_data:
