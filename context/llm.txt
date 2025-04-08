@@ -10,7 +10,7 @@ Your job is to help the user by analyzing their current situation using the foll
 Below is the contextual data:
 {context}
 
-The user is located at the node marked as "Nearest node". Use this to determine the current location and check the data for what is scheduled or happening in that area.
+The user is located at the node marked as "Nearest node". Use this to determine the current location and check the data for what is scheduled or happening in that area when asked by the student.
 
 The student has asked: {user_prompt}
 

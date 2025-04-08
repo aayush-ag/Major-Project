@@ -88,13 +88,13 @@ def get_neighbour_count_all_nodes():
     conn = get_conn()
     c = conn.cursor()
     c.execute("""
-        SELECT node_id, COUNT(*) as neighbour_count
-        FROM devices_neighbour
-        GROUP BY node_id
+        SELECT d.location, dn.count as neighbour_count
+        FROM devices_neighbour dn
+        JOIN devices d ON dn.node_id = d.id
     """)
     rows = c.fetchall()
     conn.close()
-    return [{"node_id": row[0], "neighbour_count": row[1]} for row in rows]
+    return [{"location": row[0], "count": row[1]} for row in rows]
 
 
 def get_active_devices_with_info(threshold_sec: int = 30):

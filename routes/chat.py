@@ -29,6 +29,7 @@ async def chat_with_context(data: ChatRequest):
 
     # Compose context string
     context = f"Nearest Node: {data.nearest}\n"
+    context += f"Name of the student: {data.name}\n"
     context += f"Current Date: {time_info['date']}, Day: {time_info['day']}, Time: {time_info['time']} IST\n"
 
     context += "\nActive Nodes:\n"
@@ -37,17 +38,14 @@ async def chat_with_context(data: ChatRequest):
     else:
         context += "No active Nodes found."
 
-    context += "\n\nNeighbour Counts per Node:\n"
+    context += "\n\nEstimated People Count per Node:\n"
     if neighbour_counts:
-        context += "\n".join([f"- Node: {n['node_id']}, Neighbours: {n['neighbour_count']}" for n in neighbour_counts])
+        context += "\n".join([
+            f"- {n['location']}: Estimated {n['count']} people present"
+            for n in neighbour_counts
+        ])
     else:
-        context += "No neighbour data available."
-
-    context += "\n\nNearby Devices:\n"
-    if data.neighbour:
-        context += "\n".join([f"- {d.id} (RSSI: {d.rssi})" for d in data.neighbour])
-    else:
-        context += "No nearby devices detected."
+        context += "No data available for people counts in rooms."
 
     response = ask_model(data.prompt, context)
     return {"response": response}
