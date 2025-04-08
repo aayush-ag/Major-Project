@@ -1,0 +1,26 @@
+-- Room 331 (8th Semester)
+Monday
+- 09:00–11:00: ECS-802: Optical Fiber Communication — Prof. Mainuddin (MU)
+- 12:00–13:00: ECS-801: Microwave — Dr. Md. Waseem Akram (WA)
+- 14:00–18:00: Microwave Lab (X-1) — Dr. S. Intekhab Amin (SIA), Prof. Mainuddin (MU) (Room 249)
+---
+Tuesday
+- 09:00–11:00: ECS-802: Optical Fiber Communication — Prof. Mainuddin (MU)
+- 12:00–13:00: ECS-801: Microwave — Dr. Md. Waseem Akram (WA)
+- 14:00–18:00: Microwave Lab (X-3) — Dr. S. Intekhab Amin (SIA), Prof. Mainuddin (MU) (Room 249)
+---
+Wednesday
+- 09:00–11:00: ECS-812: Major Project — Prof. M. T. Beg (MTB), Dr. S. Intekhab Amin (SIA) (Room 255)
+- 12:00–13:00: ECS-801: Microwave — Dr. Md. Waseem Akram (WA)
+- 14:00–18:00: Major Project — Dr. Md. Waseem Akram (WA), Dr. Imran Ahmad Khan (IK) (Room 255)
+---
+Thursday
+- 09:00–11:00: Major Project — Prof. Mainuddin (MU), Dr. Amber Khan (AK) (Room 255)
+- 12:00–13:00: ECS-801: Microwave — Dr. Md. Waseem Akram (WA)
+- 14:00–18:00: Microwave Lab (X-2) — Dr. S. Intekhab Amin (SIA), Prof. Mainuddin (MU) (Room 249)
+---
+Friday
+- 09:00–11:00: Major Project — Prof. Neelofar Afzal (NA), Prof. Dinesh Prasad (DP) (Room 255)
+- 11:00–13:00: Major Project — Dr. Imran Ahmad Khan (IK), Mr. Shamsul Haq (SH) (Room 255)
+- 14:00–16:00: Major Project — Prof. Dinesh Prasad (DP), Prof. M. Nizamuddin (MN) (Room 255)
+---

@@ -1,0 +1,34 @@
+-- Room 333 (4th Semester)
+Monday
+- 09:00–10:00: ECS-40x: Computer Architecture — Prof. Shahid Hussain
+- 10:00–11:00: Environmental Science — Dr. C. V. Lehana
+- 12:00–13:00: Minor/Honors: VLSI Technology — Dr. Hina Naz
+- 14:00–16:00: EDC-II Lab (Group X-1) — Dr. Wajid Ali, Dr. Hina Naz (Room 252)
+- 14:00–16:00: Analog Communication Lab (Group X-3) — Prof. Irfan Khan, Dr. Mohd. Ashraf, Research Scholar Zafar (Room 257)
+- 16:00–18:00: Computer Architecture Lab (Group X-1) — Dr. Hina Naz, Prof. Shahid Hussain (Room 257)
+---
+Tuesday
+- 09:00–11:00: EDC-II — Dr. S. Iqbal Ahmed
+- 11:00–12:00: Computer Architecture — Prof. Shahid Hussain
+- 12:00–13:00: Minor/Honors: VLSI Technology — Dr. Hina Naz
+- 14:00–16:00: EDC-II Lab (Group X-2) — Dr. Wajid Ali, Dr. Hina Naz (Room 252)
+- 14:00–16:00: Analog Communication Lab (Group X-1) — Prof. Irfan Khan, Dr. Mohd. Ashraf, Research Scholar Zafar (Room 257)
+- 16:00–18:00: Computer Architecture Lab (Group X-2) — Dr. Hina Naz, Prof. Shahid Hussain (Room 257)
+---
+Wednesday
+- 09:00–10:00: Analog Communication — Prof. Irfan Khan
+- 10:00–11:00: Economics — Faculty from Mechanical Department
+- 12:00–13:00: Minor/Honors: VLSI Technology — Dr. Hina Naz
+- 14:00–15:00: NSCP — Faculty from Applied Sciences
+---
+Thursday
+- 09:00–10:00: EDC-II — Dr. Mushtaq Ul Hassan, Dr. Amber Khan
+- 10:00–11:00: Environmental Science — Dr. C. V. Lehana
+- 11:00–12:00: Operational Research — (Faculty not listed)
+- 14:00–16:00: EDC-II Lab (Group X-3) — Dr. Wajid Ali, Dr. Hina Naz (Room 252)
+- 16:00–18:00: Computer Architecture Lab (Group X-3) — Dr. Hina Naz, Prof. Shahid Hussain (Room 257)
+---
+Friday
+- 11:00–13:00: Economics — Faculty from Mechanical Department
+- 14:00–16:00: Operational Research — (Faculty not listed)
+---

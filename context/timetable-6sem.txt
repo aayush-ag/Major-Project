@@ -1,0 +1,31 @@
+-- Room 329 (6th Semester)
+Monday
+- 09:00–11:00: ECS-604: DCCN — Prof. M. Tufail Beg
+- 11:00–12:00: ECS-603: AWP — Dr. Mohd. Ashraf
+- 12:00–13:00: ECS-601: Microprocessors — Prof. Sajad Ahmad Loan
+- 14:00–18:00: DSP Lab (Group X-1) — Dr. Amber Khan, Dr. Dil Nashin Anwar, Research Scholar Asif (Room 245)
+- 14:00–18:00: Microprocessors Lab (Group X-2) — Prof. M. Nizamuddin, Dr. Anam Khan, Research Scholar Aleem (Room 246)
+- 14:00–18:00: Seminar (Group X-3) — Prof. Sajad Ahmad Loan, Prof. M. Tufail Beg, Dr. Dilshada Parveen (Room 324)
+---
+Tuesday
+- 09:00–10:00: ECS-604: DCCN — Prof. M. Tufail Beg
+- 10:00–11:00: ECS-603: AWP — Dr. Mohd. Ashraf
+- 12:00–13:00: ECS-601: Microprocessors — Prof. Sajad Ahmad Loan
+- 14:00–18:00: DSP Lab (Group X-3) — Dr. Amber Khan, Dr. Dil Nashin Anwar, Research Scholar Asif (Room 245)
+- 14:00–18:00: Microprocessors Lab (Group X-1) — Prof. M. Nizamuddin, Dr. Anam Khan, Research Scholar Aleem (Room 246)
+- 14:00–18:00: Seminar (Group X-2) — Prof. Sajad Ahmad Loan, Prof. M. Tufail Beg, Dr. Dilshada Parveen (Room 324)
+---
+Wednesday
+- 09:00–11:00: ECS-602: DSP — Dr. Dilshada Parveen
+- 12:00–13:00: ECS-601: Microprocessors — Prof. Sajad Ahmad Loan
+- 14:00–18:00: DSP Lab (Group X-2) — Dr. Amber Khan, Dr. Dil Nashin Anwar, Research Scholar Asif (Room 245)
+- 14:00–18:00: Microprocessors Lab (Group X-3) — Prof. M. Nizamuddin, Dr. Anam Khan, Research Scholar Aleem (Room 246)
+- 14:00–18:00: Seminar (Group X-1) — Prof. Sajad Ahmad Loan, Prof. M. Tufail Beg, Dr. Dilshada Parveen (Room 324)
+---
+Thursday
+- 09:00–11:00: ECS-602: DSP — Dr. Dilshada Parveen
+- 12:00–13:00: ECS-601: Microprocessors — Prof. Sajad Ahmad Loan
+---
+Friday
+- 09:00–11:00: ECS-603: AWP — Dr. Mohd. Ashraf
+---

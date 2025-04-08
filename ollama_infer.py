@@ -17,11 +17,6 @@ def load_context_files():
             with open(path, "r", encoding="utf-8") as f:
                 combined_context += f"\n\n--- {filename} ---\n"
                 combined_context += f.read()
-        elif filename.endswith(".json"):
-            with open(path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                combined_context += f"\n\n--- {filename} ---\n"
-                combined_context += json.dumps(data, indent=2)
     return combined_context
 
 
