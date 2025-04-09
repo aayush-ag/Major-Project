@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: ${DB_USER:-root}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
     volumes:
-      - /mnt/aayush/major-db:/var/lib/postgresql/data
+      - /opt/major-db:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
@@ -33,6 +33,17 @@ services:
     ports:
       - "11434:11434"
     volumes:
-      - /mnt/aayush/ollama:/root/.ollama
+      - /opt/ollama:/root/.ollama
     restart: unless-stopped
     entrypoint: ["/bin/bash", "-c", "ollama serve & sleep 5 && ollama pull mistral && tail -f /dev/null"]
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    volumes:
+      - /opt/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /opt/nginx/certs:/etc/nginx/certs:ro
+      - /opt/nginx/auth:/etc/nginx/auth:ro
+    ports:
+      - "443:443"
+    restart: unless-stopped
