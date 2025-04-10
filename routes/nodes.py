@@ -15,13 +15,11 @@ async def insert_node(data: NodesPayload):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database insert failed: {str(e)}")
 
-
 @router.get("/")
 async def get_active_nodes():
     try:
         devices = get_active_devices()
-        response = [{"id": row[0], "location": row[1], "last_seen": row[2]} for row in devices]
+        response = [{"id": row[0]} for row in devices]
         return JSONResponse(content={"devices": response})
-
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to fetch active devices: {str(e)}")
