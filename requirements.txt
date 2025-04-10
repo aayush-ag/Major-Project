@@ -1,3 +1,9 @@
 toml
 httpx
 bleak
+uvicorn
+fastapi
+psycopg2-binary
+pytz
+pydantic
+ollama
