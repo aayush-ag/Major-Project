@@ -72,7 +72,7 @@ def get_active_devices(threshold_sec: int = 30):
     c.execute("SELECT id FROM devices WHERE last_seen > %s", (cutoff,))
     rows = c.fetchall()
     conn.close()
-    return [row[0] for row in rows]
+    return rows
 
 
 def remove_stale_devices(threshold_sec: int = 30):

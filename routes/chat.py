@@ -35,8 +35,6 @@ async def chat_with_context(data: ChatRequest):
     context += "\nActive Nodes:\n"
     if active_nodes:
         context += "\n".join([f"- ID: {d['id']}, Location: {d['location']}" for d in active_nodes])
-    else:
-        context += "No active Nodes found."
 
     context += "\n\nEstimated People Count per Node:\n"
     if neighbour_counts:

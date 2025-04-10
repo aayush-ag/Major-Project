@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException
+from fastapi.responses import JSONResponse
 
 from classes.nodes import NodesPayload
 from database import insert_or_update, get_active_devices
@@ -19,6 +20,8 @@ async def insert_node(data: NodesPayload):
 async def get_active_nodes():
     try:
         devices = get_active_devices()
-        return devices
+        response = [{"id": row[0], "location": row[1], "last_seen": row[2]} for row in devices]
+        return JSONResponse(content={"devices": response})
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to fetch active devices: {str(e)}")
