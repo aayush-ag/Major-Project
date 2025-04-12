@@ -25,7 +25,7 @@ services:
       DB_PASSWORD: password
       DB_HOST: db
       DB_PORT: 5432
-      OLLAMA_API_BASE: http://ollama:11434
+      OLLAMA_API_BASE: http://100.74.190.126:11434
 
   ollama:
     image: ollama/ollama
