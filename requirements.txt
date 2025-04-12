@@ -7,3 +7,5 @@ psycopg2-binary
 pytz
 pydantic
 ollama
+openai-whisper
+python-multipart

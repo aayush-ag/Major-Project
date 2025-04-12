@@ -6,7 +6,7 @@ from fastapi import FastAPI
 
 from database import init_db
 from health import start_health_check
-from routes import nodes, neighbours, chat
+from routes import nodes, neighbours, chat, voicechat
 
 
 @asynccontextmanager
@@ -24,3 +24,4 @@ app = FastAPI(lifespan=lifespan)
 app.include_router(nodes.router)
 app.include_router(neighbours.router)
 app.include_router(chat.router)
+app.include_router(voicechat.router)

@@ -9,12 +9,17 @@ ENV DB_NAME=major \
     DB_PORT=5432 \
     OLLAMA_API_BASE=http://ollama:11434
 
-# Copy and install dependencies first (for caching)
-COPY requirements.txt .
+# Install system dependencies including ffmpeg
+RUN apt-get update && \
+    apt-get install -y ffmpeg gcc libpq-dev && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
+# Copy and install Python dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Now copy the rest of the app
+# Copy application files
 COPY . .
 
 EXPOSE 8000
