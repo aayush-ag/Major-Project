@@ -69,7 +69,7 @@ def get_active_devices(threshold_sec: int = 30):
     cutoff = time.time() - threshold_sec
     conn = get_conn()
     c = conn.cursor()
-    c.execute("SELECT id FROM devices WHERE last_seen > %s", (cutoff,))
+    c.execute("SELECT id, location FROM devices WHERE last_seen > %s", (cutoff,))
     rows = c.fetchall()
     conn.close()
     return rows
