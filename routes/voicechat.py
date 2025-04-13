@@ -46,7 +46,7 @@ async def chat_with_audio(
 
     context += "\nActive Nodes:\n"
     if active_nodes:
-        context += "\n".join([f"- ID: {d['id']}, Location: {d['location']}" for d in active_nodes])
+        context += "\n".join([f"- Location: {d['location']}" for d in active_nodes])
 
     context += "\n\nEstimated People Count per Node:\n"
     if neighbour_counts:

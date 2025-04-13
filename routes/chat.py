@@ -17,7 +17,6 @@ def get_time_info_ist():
         "date": now.strftime("%Y-%m-%d")
     }
 
-#TODO: ADD NODES FOR LOCATION DIRECTLY INTEFER THE LOCATION INSTEAD OF ID
 @router.post("/")
 async def chat_with_context(data: ChatRequest):
     # Core context parts
@@ -29,10 +28,10 @@ async def chat_with_context(data: ChatRequest):
     context = f"Nearest Node: {data.nearest}\n"
     context += f"Name of the student: {data.name}\n"
     context += f"Current Date: {time_info['date']}, Day: {time_info['day']}, Time: {time_info['time']} IST\n"
-#TODO: HERE ALSO
+
     context += "\nActive Nodes:\n"
     if active_nodes:
-        context += "\n".join([f"- ID: {d['id']}, Location: {d['location']}" for d in active_nodes])
+        context += "\n".join([f"- Location: {d['location']}" for d in active_nodes])
 
     context += "\n\nEstimated People Count per Node:\n"
     if neighbour_counts:
