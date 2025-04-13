@@ -19,6 +19,8 @@ services:
     container_name: fastapi
     ports:
       - "8000:8000"
+    volumes:
+      - ./:/app
     environment:
       DB_NAME: major
       DB_USER: root
